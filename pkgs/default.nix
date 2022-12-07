@@ -29,8 +29,6 @@ self: super: with self.lib; let
 
       colcon-test-result = pySelf.callPackage ./colcon/test-result.nix { };
 
-      empy = pySelf.callPackage ./empy { };
-
       rosdep = pySelf.callPackage ./rosdep { };
 
       rosdistro = pySelf.callPackage ./rosdistro { };
