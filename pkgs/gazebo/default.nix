@@ -5,6 +5,7 @@
 , ignition-common ? ignition.common, ignition-math ? ignition.math4
 , ignition-transport ? ignition.transport8, ignition-msgs ? ignition.msgs5
 , ignition-fuel-tools ? ignition.fuel-tools4
+. libsodium
 
 , bullet, withBulletEngineSupport ? false
 , version ? "11.11.0"
@@ -80,6 +81,7 @@ mkDerivation rec {
     ignition-transport
     ignition-msgs
     ignition-fuel-tools
+    libsodium
   ];
 
   meta = {
